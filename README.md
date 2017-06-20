@@ -1,15 +1,25 @@
 # zzukbot_shaman
-Do not bot AFK, dont be greedy, you will be banned.
+Do not bot AFK, dont be greedy, you will be banned!
 
 Shaman Bot created for Zzukbot v1 featuring:
+
 Level 1-60
+
 Intelligent healing
+
 Smart Ghost Wolf
+
 Tons of totems
+
 Use most abilities
+
 Potion support
+
 Fighting multiple mobs
+
 Automatic drink selection
+
+-------------------
 
 How to use:
 
