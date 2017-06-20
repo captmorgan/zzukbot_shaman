@@ -309,12 +309,13 @@ namespace CaptShaman
         public override void PreFight()
         {
 			bool ShouldRest = false;
+            this.Player.Attack();
 			if (this.Player.GotBuff("Ghost Wolf"))
 			{
 				this.SetCombatDistance(4);
                 this.Player.Attack();				
 			}
-			else if (this.Target.DistanceToPlayer > 18 && this.Player.ManaPercent >= lowManaP && (this.Target.CreatureType != CreatureType.Elemental))
+			else if (this.Target.DistanceToPlayer > 18 && this.Target.DistanceToPlayer <= 30 && this.Player.ManaPercent >= lowManaP && (this.Target.CreatureType != CreatureType.Elemental))
             {
                 this.SetCombatDistance(28);
 				if (this.Player.GotBuff("Clearcasting") && this.Player.CanUse("Chain Lightning")) 
@@ -328,7 +329,6 @@ namespace CaptShaman
 			else
 			{
 				this.SetCombatDistance(4);
-                this.Player.Attack();
 			}
         }
 		
